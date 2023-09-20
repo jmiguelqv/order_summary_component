@@ -1,0 +1,151 @@
+@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@500;700;900&display=swap');
+
+:root {
+    /* Primary*/
+    --PaleBlue: hsl(225, 100%, 94%);
+    --BrightBlue: hsl(245, 75%, 52%);
+    /* Neutral*/
+    --VeryPaleBlue: hsl(225, 100%, 98%);
+    --DesaturatedBlue: hsl(224, 23%, 55%);
+    --DarkBlue: hsl(223, 47%, 23%);
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Red Hat Display', sans-serif; /*Weights: 500, 700, 900*/
+    background-color: var(--PaleBlue);
+    background-image: url(images/pattern-background-mobile.svg);
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+main {
+    border-radius: 10px;
+    overflow: hidden;
+    width: 329px;
+    margin: 140px auto 70px;
+    background-color: white;
+}
+.image {
+    height: 162px;
+    background-image: url(./images/illustration-hero.svg);
+    background-size: cover;
+}
+h1 {
+    text-align: center;
+    font-size: 1.4em;
+    padding-top: 38px;
+    padding-bottom: 30px;
+}
+.description {
+    text-align: center;
+    color: var(--DesaturatedBlue);
+    margin-bottom: 30px;
+    padding: 0 30px;
+}
+
+.plan {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: var(--VeryPaleBlue);
+    border-radius: 10px;
+    margin: 0 auto 32px;
+    width: 280px;
+    height: 82px;
+}
+
+.plan-detail h2 {
+    font-size: 1em;
+}
+
+.plan-detail p {
+    color: var(--DesaturatedBlue);
+}
+
+.plan a {
+    color: var(--BrightBlue);
+    font-size: 0.8em;
+    font-weight: 700;
+    margin-left: 30px;
+}
+
+.plan a:hover {
+    text-decoration: none;
+    color: var(--DesaturatedBlue);
+    cursor: pointer;
+}
+
+button {
+    background-color: var(--BrightBlue);
+    width: 280px;
+    display: block;
+    text-align: center;
+    margin: 0 auto;
+    border-radius: 10px;
+    height: 48px;
+    border-style: none;
+    color: white;
+    font-size: 16px;
+    font-weight: 700;
+    box-shadow: 1px 10px 8px 3px var(--PaleBlue);
+}
+button:hover {
+    background-color: var(--DesaturatedBlue);
+    cursor: pointer;
+}
+.cancel-order {
+    text-decoration: none;
+    color: var(--DesaturatedBlue);
+    font-size: 1em;
+    font-weight: 900;
+    display: block;
+    text-align: center;
+    margin: 30px 0 30px 0;
+}
+.cancel-order:hover {
+    color: var(--DarkBlue);
+}
+/*footer*/
+.attribution {
+    font-size: 11px;
+    text-align: center;
+}
+.attribution a {
+    color: hsl(228, 45%, 44%);
+}
+
+@media screen and (min-width: 675px) {
+    body {
+        background-image: url(./images/pattern-background-desktop.svg);
+    }
+    main {
+        width: 408px;
+        margin-bottom: 50px;
+    }
+    h1 {
+        margin: 48px 0 24px;
+        padding-top: 0px;
+        padding-bottom: 0px;
+    }
+    .description {
+        padding: 0 50px;
+        margin-bottom: 20px;
+    }
+    .plan {
+        width: 316px;
+        padding: 0 10px;
+        margin: 0 auto 28px;
+    }
+    .plan a {
+        margin-left: 60px;
+    }
+    button {
+        width: 316px;
+        margin-bottom: 32px;
+    }
+}
